@@ -75,3 +75,12 @@ $ucapanSalam = "Selamat pagi";
 //memanggil lagi tanpa mengisi parameter salam
 perkenalan($saya);
 ?>
+<?php
+// fungsi 
+function hitungUmur($thn_Lahir, $thn_Sekarang){
+    $umur = $thn_Sekarang - $thn_Lahir;
+    return $umur; 
+}
+
+echo "Umur saya adalah ". hitungUmur(1988, 2023) ."tahun"
+?>
