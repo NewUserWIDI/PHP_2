@@ -25,3 +25,34 @@ echo "<hr>"; // Tambahkan garis pemisah agar outputnya jelas
 perkenalan(); // Panggilan kedua
 
 ?>
+<?php
+function perkenalan(){
+    echo "Assalamualaikum, ";
+    echo "Perkenalkan, nama saya Widiii<br>"; //Tulis sesuai nama kalian
+    echo "Senang berkenalan dengan Anda<br>";
+}
+
+//memanggil fungsi yang sudah dibuat
+perkenalan();
+echo "<hr>"; // Tambahkan garis pemisah agar outputnya jelas
+perkenalan(); // Panggilan kedua
+?>
+
+<?php
+// membuat fungsi baru dengan parameter
+function perkenalanDenganNama($nama, $salam){
+    echo $salam.", ";
+    echo "Perkenalkan, nama saya ".$nama."<br/>";
+    echo "Senang berkenalan dengan Anda<br/>";
+}
+
+//memanggil fungsi yang sudah dibuat
+perkenalanDenganNama("Handana", "Hallo");
+echo "<hr>";
+
+$saya = "Widiii";
+$ucapanSalam = "Selamat pagi";
+
+//memanggil lagi
+perkenalanDenganNama($saya, $ucapanSalam);
+?>
