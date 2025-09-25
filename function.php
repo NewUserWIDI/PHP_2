@@ -56,3 +56,22 @@ $ucapanSalam = "Selamat pagi";
 //memanggil lagi
 perkenalanDenganNama($saya, $ucapanSalam);
 ?>
+<?php
+// fungsi dengan parameter default
+function perkenalanDefault($nama, $salam = "Assalamualaikum"){
+    echo $salam.", ";
+    echo "Perkenalkan, nama saya ".$nama."<br/>";
+    echo "Senang berkenalan dengan Anda<br/><br/>";
+}
+
+// memanggil fungsi yang sudah dibuat
+perkenalanDefault("Hamdana", "Hallo");
+
+echo "<hr>";
+
+$saya = "Widiii";
+$ucapanSalam = "Selamat pagi";
+
+//memanggil lagi tanpa mengisi parameter salam
+perkenalan($saya);
+?>
