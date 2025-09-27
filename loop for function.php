@@ -102,3 +102,8 @@ function perkenalan ($nama, $salam="Assalamualaikum") {
 // pemanggilan fungsi perkenalan
 perkenalan("Widi"); 
 ?>
+<?php
+for ($i=1; $i <=25; $i++){
+    echo "Perulangan ke-{$i} <br>";
+}
+?>
